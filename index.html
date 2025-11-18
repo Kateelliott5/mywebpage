@@ -1,101 +1,139 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kate's Website</title>
 
-.navbar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
+  <!-- Font + Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-.navbar a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      background-image: url("download.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-.navbar a:hover {
-  background-color: #000;
-}
+    /* NAVBAR */
+    .navbar {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+      overflow: auto;
+    }
 
-.active {
-  background-color: #04AA6D;
-}
+    .navbar a {
+      float: left;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 400;
+      transition: 0.3s;
+    }
 
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-}
-</style>
+    .navbar a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .active {
+      background-color: #2ecc71;
+      font-weight: 600;
+    }
+
+    @media screen and (max-width: 500px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+    /* CARD CONTENT */
+    .content {
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(5px);
+      margin: 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      line-height: 1.7;
+    }
+
+    img {
+      border-radius: 12px;
+      margin-top: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    }
+
+    h1, h2 {
+      font-weight: 600;
+    }
+
+    a.link {
+      color: #7fffd4;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
 <body>
 
-<head>
-<style>
-body {
-  background-image: url("download.webp");
-}
- <div>width="300" height="300"</div> 
-</style>
-</head>
-<div class="navbar">
-  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwio3dmkhruQAxWoHjQIHVyfM6cQPAgI"><i class="fa fa-fw fa-search"></i> Search</a>
-  <a href="mailto:kje5@stmarys-ca.edu"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-</div>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="sched.html"><i class="fa fa-fw fa-calendar"></i> Schedule</a>
+    <a href="https://www.google.com/"><i class="fa fa-fw fa-search"></i> Search</a>
+    <a href="mailto:kje5@stmarys-ca.edu"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  </div>
 
-</head>
-  <head>
-<style>
-body {
-  color: white;
-}
-</style>
-</head>
-<body>
-  <Title>Kate's website</Title>
-</head>
-<body>
-<h1>Welcome to my website</h1> 
-  <h2>Something about me</h2>
-  <div>I am half Irish and half German, born in LA County, California, and I'm from Boulder, Colorado. I am studying to be an elementary school teacher, and I also play college rugby. I have been a babysitter for 5-6 years, and I have been at my current Job for almost a year.</div>
-  <br/>
-  <div><img src="IMG_0630.JPG" width="300"></div>
-  <h2>Hobbies:</h2>
- Some of my Hobbies are:
-  <ul>
-    <li>Hanging out with Friends</li>
-    <li>Coloring in coloring books</li>
-    <li>Listening and playing music</li>
-    <li>Playing College Rugby</li>
-  </ul>
- 
-  <h2>Classes I'm taking and Major:</h2>
-My Major is Elementary Education, and classes for my freshman year are:
-  <ol>
-    <li>SPAN 201 - Intermediate Spanish</li>
-    <li>HIST 112 - Global History since 1500</li>
-    <li>SMC 100 - FYAC</li>
-    <li>CS 102 - Digital L</li>
-    <li>JCL 100 - Intro to JCL</li>
-    <li>JAN 113 - Japanese in the Bay Area</li>
-  </ol>
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <h1>Welcome to My Website</h1>
 
-   <a href="sched.html">Look at my class schedule
+    <h2>About Me</h2>
+    <p>I am half Irish and half German, born in LA County, California, and I'm from Boulder, Colorado. I am studying to be an elementary school teacher, and I also play college rugby. I have been a babysitter for 5–6 years, and I have been at my current job for almost a year.</p>
 
-     <h1>My High School Marching Band State Finals 2021</h1>
+    <img src="IMG_0630.JPG" width="300" alt="Photo of me" />
 
-     <iframe width="555" height="312" src="https://www.youtube.com/embed/aXfOEa-ZVy8" title="Centaurus Marching Band 2021 State Finals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Hanging out with friends</li>
+      <li>Coloring in coloring books</li>
+      <li>Listening and playing music</li>
+      <li>Playing college rugby</li>
+    </ul>
 
-<h1>My College Camups:</h1>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.286740808005!2d-122.1113160647337!3d37.841051508968796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f884cd1042763%3A0xf4af4d5ec8f1ac3d!2sSaint%20Mary&#39;s%20College%20of%20California!5e0!3m2!1sen!2sus!4v1759863743450!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>Classes I'm Taking & Major</h2>
+    <p>My major is Elementary Education, and my classes for freshman year are:</p>
+    <ol>
+      <li>SPAN 201 – Intermediate Spanish</li>
+      <li>HIST 112 – Global History since 1500</li>
+      <li>SMC 100 – FYAC</li>
+      <li>CS 102 – Digital L</li>
+      <li>JCL 100 – Intro to JCL</li>
+      <li>JAN 113 – Japanese in the Bay Area</li>
+    </ol>
+
+    <p><a class="link" href="sched.html">👉 View My Class Schedule</a></p>
+
+    <h1>My High School Marching Band (2021)</h1>
+    <iframe width="555" height="312" src="https://www.youtube.com/embed/aXfOEa-ZVy8" frameborder="0" allowfullscreen></iframe>
+
+    <h1>My College Campus</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.286740808005!2d-122.1113160647337!3d37.841051508968796" width="600" height="450" style="border:0;" allowfullscreen></iframe>
+  </div>
+
 </body>
+</html>
+
+
 
 
 
